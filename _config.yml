@@ -24,8 +24,22 @@ description: >- # this means to ignore newlines until "baseurl:"
   The personal site of Andrzej Prochyra, human being.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://prochyra.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: AndrzejProchyra
-github_username:  andrzejp
+
+author:
+  name: "Andrzej Prochyra"
+  avatar: "/assets/images/andrzej-headshot-small.jpg"
+  bio: "Software developer and aspiring [Software Craftsperson](https://manifesto.softwarecraftsmanship.org/)"
+  location: "UK"
+  links:
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/andrzej-prochyra/"
+    - label: "Xwitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/AndrzejProchyra"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/andrzejp"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -54,3 +68,11 @@ plugins:
 #   - vendor/ruby/
 exclude:
   - .idea/
+
+defaults:
+  # _posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      author_profile: true
